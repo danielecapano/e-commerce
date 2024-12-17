@@ -24,6 +24,7 @@ Accedi al sito: [Forever.](https://my-store-frontend-orpin.vercel.app/)
 - **Backend:** Node.js con Express.
 - **Dashboard:** React.js con Vite.
 - **Database:** MongoDB.
+- **Storage Foto:** Cloudinary.
 - **Hosting:** Vercel.
 
 ## Installazione locale
