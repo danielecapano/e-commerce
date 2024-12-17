@@ -2,6 +2,7 @@
 
 Un progetto di e-commerce di abbigliamento, completamente responsive per essere visualizzato in maniera ottimale su tutti i dispositivi, sviluppato con lo stack MERN e ospitato su [Vercel](https://vercel.com).
 
+![Logo del progetto](image-mockup.png)
 
 
 ## Demo Online
