@@ -24,7 +24,7 @@ const Contact = () => {
           </p>
           <p className=' text-gray-500'>
             Tel: (+39) 081.12.34.567 <br />
-            Email: admin@sarabosso.com
+            Email: info@sarabosso.com
           </p>
           <p className='font-semibold text-xl text-gray-600'>Lavora con noi</p>
           <p className=' text-gray-500 max-w-[30ch]'>
