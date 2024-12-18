@@ -108,18 +108,18 @@ export const filters = [
 export const policies = [
   {
     icon: exchange_icon,
-    title: "Easy Exchange Policy",
-    description: "We offer hassle free exchange policy",
+    title: "Cambio prodotto semplice",
+    description: "Fare un cambio non è mai stato così facile.",
   },
   {
     icon: quality_icon,
-    title: "7 Days Return Policy",
-    description: "We provide 7 days free return policy",
+    title: "14 giorni per ripensarci",
+    description: "Puoi restituire i tuoi acquisti gratis entro 2 settimane",
   },
   {
     icon: support_img,
-    title: "Best customer support",
-    description: "We provide 24/7 customer support",
+    title: "Il miglior servizio clienti",
+    description: "I nostri operatori sono a tua disposizione 24/7.",
   },
 ];
 
