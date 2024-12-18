@@ -46,26 +46,28 @@ const About = () => {
       <div className=' text-xl py-4'>
         <Title text1='why' text2='choose us' />
       </div>
-      <div className='flex flex-col md:flex-row text-sm mb-20 border divide-x'>
+      <div className='flex flex-col md:flex-row text-sm mb-20 border divide-y md:divide-x md:divide-y-0'>
         <div className='px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
-          <p className='font-bold'>Quality Assurance:</p>
+          <p className='font-bold'>Garanzia di qualità:</p>
           <p className=' text-gray-600'>
-            We meticulously select and vet each product to ensure it meets our
-            stringent quality standards.
+            Selezioniamo e verifichiamo meticolosamente ogni prodotto per
+            garantire che soddisfi i nostri rigorosi standard qualitativi.
           </p>
         </div>
         <div className='px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
-          <p className='font-bold'>Convenience:</p>
+          <p className='font-bold'>Convenienza:</p>
           <p className=' text-gray-600'>
-            With our user-friendly interface and hassle-free ordering process,
-            shopping has never been easier.
+            Grazie alla nostra interfaccia intuitiva e al processo di
+            ordinazione senza problemi, fare acquisti non è mai stato così
+            facile.
           </p>
         </div>
         <div className='px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
-          <p className='font-bold'>Exceptional Customer Service:</p>
+          <p className='font-bold'>Servizio clienti eccezionale:</p>
           <p className=' text-gray-600'>
-            Our team of dedicated professionals is here to assist you the way,
-            ensuring your satisfaction is our top priority.
+            Il nostro team di professionisti dedicati è pronto ad assisterti
+            lungo il percorso, assicurando che la tua soddisfazione sia la
+            nostra massima priorità.
           </p>
         </div>
       </div>
