@@ -23,6 +23,11 @@ const ProductItem = ({
           alt=''
           className='hover:scale-110 transition ease-in-out w-full'
         />
+        <img
+          src={images[1] || images[0]}
+          alt=''
+          className='absolute top-0 left-0 w-full opacity-0 hover:opacity-100 transition ease-in-out'
+        />
         {promo && (
           <div className='absolute left-0 bottom-4 flex gap-2'>
             <span className='bg-red-500 text-white text-sm font-semibold py-1 px-2'>

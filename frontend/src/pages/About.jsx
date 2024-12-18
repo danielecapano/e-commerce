@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <div className='text-2xl text-center pt-8 border-t'>
-        <Title text1='about' text2='us' />
+        <Title text1='chi' text2='siamo' />
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-16'>
         <img
@@ -17,25 +17,29 @@ const About = () => {
         />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
           <p>
-            Forever was born out of a passion for innovation and a desire to
-            revolutionize the way people shop online. Our journey began with a
-            simple idea: to provide a platform where customers can easily
-            discover, explore, and purchase a wide range of products from the
-            comfort of their homes.
+            <span className='font-semibold'>Sara Bosso Beauty and Style</span> è
+            nata dalla passione per l'innovazione e dal desiderio di
+            rivoluzionare il modo in cui le persone fanno acquisti online. Il
+            nostro viaggio è iniziato con un'idea semplice: creare una
+            piattaforma dove i clienti possano facilmente scoprire, esplorare e
+            acquistare una vasta gamma di prodotti direttamente dal comfort
+            delle loro case.
           </p>
           <p>
-            Since our inception, we've worked tirelessly to curate a diverse
-            selection of high-quality products that cater to every taste and
-            preference. From fashion and beauty to electronics and home
-            essentials, we offer an extensive collection sourced from trusted
-            brands and suppliers.
+            Sin dalla nostra nascita, lavoriamo instancabilmente per selezionare
+            un assortimento diversificato di prodotti di alta qualità, pensati
+            per soddisfare ogni gusto e preferenza. Dalla moda e bellezza
+            all'elettronica e agli articoli per la casa, offriamo un'ampia
+            collezione proveniente da marchi e fornitori di fiducia.
           </p>
-          <p className='text-gray-800 font-bold'>Our Mission</p>
+          <p className='text-gray-800 font-bold'>La nostra missione</p>
           <p>
-            Our mission at Forever is to empower customers with choice,
-            convenience, and confidence. We're dedicated to providing a seamless
-            shopping experience that exceeds expectations, from browsing and
-            ordering to delivery and beyond.
+            La missione di{" "}
+            <span className='font-semibold'>Sara Bosso Beauty and Style</span> è
+            offrire ai clienti scelta, praticità e fiducia. Siamo impegnati a
+            garantire un'esperienza di shopping senza intoppi, che superi le
+            aspettative in ogni fase: dalla navigazione e ordinazione alla
+            consegna e oltre.
           </p>
         </div>
       </div>

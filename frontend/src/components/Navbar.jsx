@@ -10,9 +10,13 @@ const Navbar = () => {
   const { totalQuantity } = useCartContext();
 
   return (
-    <div className='flex items-center justify-between py-5 font medium '>
+    <div className='flex items-center justify-between font medium '>
       <Link to='/'>
-        <img src={assets.logo} className='w-36 cursor pointer' alt='' />
+        <img
+          src={assets.logo_bosso}
+          className='w-32 sm:w-36 cursor pointer'
+          alt=''
+        />
       </Link>
 
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700 uppercase'>

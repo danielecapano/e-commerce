@@ -24,10 +24,10 @@ const LatestCollection = () => {
   return (
     <div className='my-10'>
       <div className='text-center py-8 text-3xl'>
-        <Title text1='latest' text2='collection' />
+        <Title text1='ultimi' text2='arrivi' />
         <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the.
+          Esplora le ultime tendenze della stagione: capi appena arrivati per
+          aggiornare il tuo guardaroba con stile.
         </p>
       </div>
       {/* Rendering Products */}

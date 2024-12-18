@@ -4,12 +4,11 @@ const NewletterBox = () => {
   };
   return (
     <div className='text-center'>
-      <p className='text-2xl font-medium text-gray-800'>
-        Subscribe now & get 20% off
+      <p className='text-lg sm:text-2xl font-medium text-gray-800'>
+        Iscriviti adesso e ottieni il 20% di sconto*
       </p>
       <p className='text-gray-400 mt-3'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
+        *offerta valida solo sul primo ordine
       </p>
       <form
         onSubmit={handleSubmit}
@@ -17,7 +16,7 @@ const NewletterBox = () => {
       >
         <input
           type='email'
-          placeholder='Enter your email'
+          placeholder='Inserisci la tua email'
           className='w-full sm:flex-1 outline-none border border-r-0 py-3 pl-3'
           required
         />
@@ -25,7 +24,7 @@ const NewletterBox = () => {
           type='submit'
           className='bg-black text-white text-xs px-10 py-4 border border-black font-medium uppercase'
         >
-          subscribe
+          iscriviti
         </button>
       </form>
     </div>

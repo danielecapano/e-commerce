@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Login = () => {
-  const [currentState, setCurrentState] = useState("Sign Up");
+  const [currentState, setCurrentState] = useState("Registrati");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,10 +13,9 @@ const Login = () => {
       onSubmit={handleSubmit}
     >
       <div className='inline-flex items-center gap-2 mb-2 mt-10'>
-        <p className='font-prata text-3xl'>{currentState}</p>
-        <hr className='border-none h-[1.5px] w-8 bg-gray-800' />
+        <p className='font-bodoni-moda text-3xl'>{currentState}</p>
       </div>
-      {currentState === "Sign Up" && (
+      {currentState === "Registrati" && (
         <input
           type='text'
           className='w-full px-3 py-2 border border-gray-800'
@@ -37,20 +36,20 @@ const Login = () => {
         required
       />
       <div className='w-full flex justify-between text-sm -mt-2'>
-        <p className='cursor-pointer'>Forgot your password?</p>
-        {currentState === "Sign Up" ? (
+        <p className='cursor-pointer'>Password dimenticata?</p>
+        {currentState === "Registrati" ? (
           <p
             className='cursor-pointer'
             onClick={() => setCurrentState("Login")}
           >
-            Login Here
+            Hai già un account?
           </p>
         ) : (
           <p
             className='cursor-pointer'
-            onClick={() => setCurrentState("Sign Up")}
+            onClick={() => setCurrentState("Registrati")}
           >
-            Create account
+            Crea un account
           </p>
         )}
       </div>

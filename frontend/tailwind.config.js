@@ -9,6 +9,12 @@ export default {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
         prata: ["Prata", "serif"],
+        "bodoni-moda": [
+          "'Bodoni Moda', serif",
+          {
+            fontVariationSettings: "'opsz' 8",
+          },
+        ],
       },
       screens: {
         xs: "480px",

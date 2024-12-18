@@ -151,7 +151,7 @@ const Collection = () => {
       </div>
       {/* right side */}
       <div className='flex-1'>
-        <div className='flex flex-col xs:flex-row justify-between text-3xl xs:text-lg sm:text-xl ml:text-2xl lg:text-3xl mb-4'>
+        <div className='flex flex-col xs:flex-row justify-between text-2xl xs:text-lg sm:text-xl ml:text-2xl lg:text-3xl mb-4'>
           <Title text1='collezione' text2='completa' />
           {/* Product sort */}
           <select
