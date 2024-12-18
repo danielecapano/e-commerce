@@ -28,7 +28,7 @@ const Navbar = () => {
           to='/collection'
           className='group flex flex-col items-center gap-1'
         >
-          <p>Collection</p>
+          <p>Collezione</p>
           <hr className='scale-x-0 group-hover:scale-x-100 w-1/2 border-none h-[1.5px] transition bg-gray-400' />
         </NavLink>
         <NavLink to='/about' className='group flex flex-col items-center gap-1'>
@@ -39,7 +39,7 @@ const Navbar = () => {
           to='contact'
           className='group flex flex-col items-center gap-1'
         >
-          <p>Contact</p>
+          <p>Contatti</p>
           <hr className='scale-x-0 group-hover:scale-x-100 w-1/2 border-none h-[1.5px] transition bg-gray-400' />
         </NavLink>
       </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
             to='/collection'
             onClick={() => setIsVisible(false)}
           >
-            collection
+            collezione
           </NavLink>
           <NavLink
             className='py-2 pl-6 border uppercase'
@@ -118,7 +118,7 @@ const Navbar = () => {
             to='/contact'
             onClick={() => setIsVisible(false)}
           >
-            contact
+            contatti
           </NavLink>
         </div>
       </div>

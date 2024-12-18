@@ -39,14 +39,18 @@ const cartReducer = (state, action) => {
             action.payload.number != null)
       );
     case "addQuantity":
-      return state.map((product) =>
-        product.id === action.payload.id &&
-        (product.size === action.payload.size || action.payload.size == null) &&
-        (product.number === action.payload.number ||
-          action.payload.number == null)
+      return state.map((product) => {
+        const matches =
+          product.id === action.payload.id &&
+          (action.payload.size === null ||
+            product.size === action.payload.size) &&
+          (action.payload.number === null ||
+            product.number === action.payload.number);
+
+        return matches
           ? { ...product, quantity: product.quantity + 1 }
-          : product
-      );
+          : product;
+      });
     case "removeQuantity":
       return state.map((product) =>
         product.id === action.payload.id &&

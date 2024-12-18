@@ -38,7 +38,7 @@ const CartItem = ({ id, image, name, price, size, number, quantity }) => {
       <div className='flex items-center gap-1'>
         <button
           className='bg-black text-white size-8'
-          onClick={() => removeQuantity(id, size)}
+          onClick={() => removeQuantity(id, size, number)}
         >
           -
         </button>
@@ -50,7 +50,7 @@ const CartItem = ({ id, image, name, price, size, number, quantity }) => {
         />
         <button
           className='bg-black text-white size-8'
-          onClick={() => addQuantity(id, size)}
+          onClick={() => addQuantity(id, size, number)}
         >
           +
         </button>
@@ -59,7 +59,7 @@ const CartItem = ({ id, image, name, price, size, number, quantity }) => {
         src={assets.bin_icon}
         className='w-4 mr-4 sm:w-5 cursor-pointer'
         alt=''
-        onClick={() => removeArticle(id, size)}
+        onClick={() => removeArticle(id, size, number)}
       />
     </div>
   );

@@ -27,7 +27,6 @@ const Product = () => {
     promo,
   } = product;
 
-  console.log(sizes, numberShoes);
   const [indexImage, setIndexImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedNumber, setSelectedNumber] = useState(null);
@@ -128,7 +127,7 @@ const Product = () => {
             <p className='pl-2'>(122)</p>
           </div>
           <h1 className='mt-5 text-3xl font-medium'>
-            {getPrice(price, discount)} {currency}
+            {getPrice(price, discount) || 0} {currency}
           </h1>
           {promo && (
             <div className='flex items=center gap-4'>
@@ -195,13 +194,13 @@ const Product = () => {
             }`}
             onClick={handleAddToCart}
           >
-            add to card
+            aggiungi al carrello
           </button>
           <hr className='mt-8 sm:w-4/5' />
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
-            <p>100% Original product.</p>
-            <p>Cash on delivery is available on this product.</p>
-            <p>Easy return and exchange policy within 7 days.</p>
+            <p>Prodotto 100% Originale.</p>
+            <p>Per questo articolo è possibile il pagamento alla consegna</p>
+            <p>Reso senza costi aggiuntivi entro 14 giorni.</p>
           </div>
         </div>
       </div>
@@ -232,7 +231,7 @@ const Product = () => {
       </div>
       <div className='my-24'>
         <div className=' text-center text-3xl py-2'>
-          <Title text1='related' text2='products' />
+          <Title text1='prodotti' text2='correlati' />
         </div>
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>
           {relatedProducts.map((product, index) => (

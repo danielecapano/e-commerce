@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { assets } from "../assets/assets";
 
 const Footer = () => {
