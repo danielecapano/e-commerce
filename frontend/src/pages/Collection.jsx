@@ -22,7 +22,6 @@ const Collection = () => {
   const [sectors, setSectors] = useState([]);
   const [categories, setCategories] = useState([]);
   const [sortType, setSortType] = useState("relevance");
-  console.log(filterProducts);
 
   const toggleSectors = (e) => {
     if (sectors.includes(e.target.value)) {

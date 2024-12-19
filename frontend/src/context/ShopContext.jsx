@@ -32,10 +32,10 @@ const ShopContextProvider = ({ children }) => {
     try {
       setStatus("loading");
       const res = await axios.get(`${backendUrl}/products`);
-      console.log(res.data.products.reverse());
+
       setProducts(res.data.products);
       setFilterProducts(res.data.products);
-      console.log(products);
+
       setStatus("ready");
     } catch (error) {
       console.log(error);

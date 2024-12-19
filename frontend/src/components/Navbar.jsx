@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { setIsSearchOpen } = useShopContext();
   const { totalQuantity } = useCartContext();
+  const adminUrl = import.meta.env.VITE_ADMIN_URL;
 
   return (
     <div className='flex items-center justify-between font medium '>
@@ -19,7 +20,7 @@ const Navbar = () => {
         />
       </Link>
 
-      <ul className='hidden sm:flex gap-5 text-sm text-gray-700 uppercase'>
+      <ul className='hidden sm:flex gap-5 text-sm text-gray-700 uppercase items-center'>
         <NavLink to='/' className='group flex flex-col items-center gap-1 '>
           <p>Home</p>
           <hr className='scale-x-0 group-hover:scale-x-100 w-1/2 border-none h-[1.5px] transition bg-gray-400' />
@@ -42,6 +43,14 @@ const Navbar = () => {
           <p>Contatti</p>
           <hr className='scale-x-0 group-hover:scale-x-100 w-1/2 border-none h-[1.5px] transition bg-gray-400' />
         </NavLink>
+        <a
+          href={adminUrl}
+          target='_blank'
+          className='border px-5 text-xs py-1 rounded-full normal-case mb-1 '
+        >
+          <p>Admin</p>
+          <hr className='scale-x-0 group-hover:scale-x-100 w-1/2 border-none h-[1.5px] transition bg-gray-400' />
+        </a>
       </ul>
       <div className='flex items-center gap-6'>
         <Link to='/collection' onClick={() => setIsSearchOpen(true)}>

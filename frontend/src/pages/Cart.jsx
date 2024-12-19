@@ -8,7 +8,6 @@ import ButtonLink from "../components/ButtonLink";
 
 const Cart = () => {
   const { productsInCart, subtotal } = useCartContext();
-  console.log(productsInCart);
 
   const navigate = useNavigate();
 

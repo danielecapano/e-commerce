@@ -7,10 +7,8 @@ import { useProductContext } from "../hooks/useProductContext";
 
 const LatestCollection = () => {
   const { products, isLoading, isError } = useProductContext();
-  console.log(products);
 
   const [latestProducts, setLatestProducts] = useState([]);
-  console.log(products, latestProducts);
 
   useEffect(() => {
     if (products.length > 0) {

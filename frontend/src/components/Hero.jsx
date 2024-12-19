@@ -13,13 +13,12 @@ const Hero = () => {
               our bestsellers
             </p> */}
           </div>
-          <h1 className='text-4xl sm:py-3 lg:text-5xl leading-relaxed font-bodoni-moda mb-4'>
-            Trova il tuo stile
+          <h1 className='text-4xl sm:py-3 lg:text-5xl leading-relaxed font-bodoni-moda mb-4 tracking-tighter'>
+            Moda che parla di te
           </h1>
           <p className='max-w-[45ch] mb-8'>
-            Scopri collezioni di abbigliamento che uniscono qualità e design,
-            pensate per valorizzare ogni occasione. Rinnova il tuo guardaroba
-            con i nostri capi esclusivi.
+            Dai un tocco unico al tuo look con capi moderni e senza tempo. Trova
+            l'ispirazione che cercavi per ogni momento della tua giornata.
           </p>
           <Link
             to='/collection'
